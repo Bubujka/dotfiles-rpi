@@ -1,14 +1,17 @@
 filetype off                   " required!
 
-set gfn=Input\ Mono\ Condensed\ Regular\ 14
+
+set gfn=Input\ Mono\ Condensed\ Regular\ 24
 " set rtp+=~/.vim/bundle/vundle/
 " call vundle#rc()
 
 " Bundle 'gmarik/vundle'
 " Bundle 'Valloric/YouCompleteMe'
 execute pathogen#infect()
-set background=light
-let g:solarized_contrast='high'
+
+set background=dark
+"let g:solarized_termcolors=256
+"let g:solarized_contrast='high'
 colorscheme solarized
 map ё `
 map й q

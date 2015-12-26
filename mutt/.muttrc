@@ -34,5 +34,17 @@ set from = zendzirou@gmail.com
 set use_from = yes
 
 set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
-bind index "I" imap-fetch-mail
 set ssl_force_tls = yes
+
+
+# Проверить новую почту по нажатию на I
+bind index "I" imap-fetch-mail
+
+# В какой файл записывать адреса людей
+set alias_file = "~/.mutt/aliases"
+
+# Мутт сам этот файл не прочитает, надо попросить его об этом явно
+source ~/.mutt/aliases
+
+# Указание куда закидывать отправленные письма
+set record = ~/.mutt/sent
